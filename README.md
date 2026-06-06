@@ -20,18 +20,16 @@ session storage. Built with security, performance, and scalability in mind.
 
 ## Endpoints
 
-| Method | Path                    | Description                             | Auth Required |
-| ------ | ----------------------- | --------------------------------------- | ------------- |
-| `POST` | `/api/v1/auth/register` | Register a new user                     | ❌            |
-| `POST` | `/api/v1/auth/login`    | Login and receive access/refresh tokens | ❌            |
-| `POST` | `/api/v1/auth/refresh`  | Refresh access token                    | ❌            |
-| `POST` | `/api/v1/auth/logout`   | Logout and revoke current session       | ✅            |
-| `POST` | `/api/v1/user/profile`  | Get information about your profile      | ✅            |
-
-| `POST` | `/api/v1/link/shortlink` | Create a new short link | ✅ | | `GET` |
-`/api/v1/link/shortlink/:link` | Resolve short link and redirect to original URL
-| ❌ | | `GET` | `/api/v1/link/activate` | Get link activity and visit
-statistics | ✅ | | ✅ |
+| Method | Path                           | Description                                     | Auth Required |
+| ------ | ------------------------------ | ----------------------------------------------- | ------------- |
+| `POST` | `/api/v1/auth/register`        | Register a new user                             | ❌            |
+| `POST` | `/api/v1/auth/login`           | Login and receive access/refresh tokens         | ❌            |
+| `POST` | `/api/v1/auth/refresh`         | Refresh access token                            | ❌            |
+| `POST` | `/api/v1/auth/logout`          | Logout and revoke current session               | ✅            |
+| `POST` | `/api/v1/user/profile`         | Get information about your profile              | ✅            |
+| `POST` | `/api/v1/link/shortlink`       | Create a new short link                         | ✅            |
+| `GET`  | `/api/v1/link/shortlink/:link` | Resolve short link and redirect to original URL | ❌            |
+| `GET`  | `/api/v1/link/activate`        | Get link activity and visit statistics          | ✅            |
 
 ## Running locally
 
